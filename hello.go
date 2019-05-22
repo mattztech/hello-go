@@ -12,7 +12,10 @@ func main() {
 	Also, package level variables do not have to be used
 	 */
 	bytes, _ := fmt.Println("Hello Go!")
-	println(bytes)
-	println(packageScope)
-	println(packageScopeWithVal)
+	fmt.Println(bytes)
+	fmt.Println(packageScope)
+	fmt.Println(packageScopeWithVal)
+	fmt.Printf("%T\n", packageScope)
+	// Included for completeness only - see docs, this actually prints to stderr
+	println("Thing")
 }
